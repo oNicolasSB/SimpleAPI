@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeShoper.Infrastructure\CoffeeShoper.Infrastructure.csproj" />
+    <ProjectReference Include="..\CoffeeShoper.DTO\CoffeeShoper.DTO.csproj" />
+    <ProjectReference Include="..\CoffeeShoper.Interfaces\CoffeeShoper.Interfaces.csproj" />
+    <ProjectReference Include="..\CoffeeShoper.Services\CoffeeShoper.Services.csproj" />
+  </ItemGroup>
+
+</Project>

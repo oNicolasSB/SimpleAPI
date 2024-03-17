@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeShoper.Interfaces\CoffeeShoper.Interfaces.csproj" />
+    <ProjectReference Include="..\CoffeeShoper.DTO\CoffeeShoper.DTO.csproj" />
+    <ProjectReference Include="..\CoffeeShoper.Infrastructure\CoffeeShoper.Infrastructure.csproj" />
+    <ProjectReference Include="..\CoffeeShoper.Domain\CoffeeShoper.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
