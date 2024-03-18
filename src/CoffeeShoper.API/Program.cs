@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 builder.Services.ConfigureRepositories();
 builder.Services.ConfigureServices(builder.Configuration);
 
-string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 

@@ -14,7 +14,7 @@ public class CoffeeShopController : ControllerBase
         _coffeeShopService = coffeeShopService;
     }
     [HttpGet]
-    public async Task<IActionResult> List()
+    public IActionResult List()
     {
         var coffeeShops = _coffeeShopService.List();
         return Ok(coffeeShops);
