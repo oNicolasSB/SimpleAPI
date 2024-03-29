@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.ConfigureIdentityServer(builder.Configuration);
 builder.Services.ConfigureRepositories();
 builder.Services.ConfigureServices(builder.Configuration);
 
@@ -17,5 +18,7 @@ var app = builder.Build();
 app.InitializeData();
 app.UseHttpsRedirection();
 app.MapControllers();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.Run();
